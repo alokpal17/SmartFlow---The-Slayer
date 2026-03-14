@@ -14,10 +14,26 @@ interface StatCardProps {
 }
 
 const statusToken = {
-  online: { label: "Online", color: "bg-emerald-400/15 text-emerald-200", dot: "bg-emerald-400" },
-  warning: { label: "Warning", color: "bg-amber-400/15 text-amber-200", dot: "bg-amber-400" },
-  critical: { label: "Critical", color: "bg-rose-400/15 text-rose-200", dot: "bg-rose-400" },
-  offline: { label: "Offline", color: "bg-slate-500/15 text-slate-300", dot: "bg-slate-400" },
+  online: {
+    label: "Online",
+    color: "bg-emerald-400/15 text-emerald-900 dark:text-emerald-100",
+    dot: "bg-emerald-500",
+  },
+  warning: {
+    label: "Warning",
+    color: "bg-amber-400/15 text-amber-900 dark:text-amber-100",
+    dot: "bg-amber-500",
+  },
+  critical: {
+    label: "Critical",
+    color: "bg-rose-400/15 text-rose-900 dark:text-rose-100",
+    dot: "bg-rose-500",
+  },
+  offline: {
+    label: "Offline",
+    color: "bg-slate-500/15 text-slate-900 dark:text-slate-200",
+    dot: "bg-slate-500",
+  },
 };
 
 export function StatCard({ title, value, subtitle, icon: Icon, trend, status = "online" }: StatCardProps) {

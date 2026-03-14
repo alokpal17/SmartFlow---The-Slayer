@@ -90,17 +90,17 @@ export default function Overview() {
         </h3>
         <div className="grid gap-3 sm:grid-cols-3">
           <button
-            className="rounded-lg border border-cyan-400/40 bg-cyan-500/20 px-4 py-2 text-sm text-cyan-100 transition hover:bg-cyan-500/30"
+            className="rounded-lg border border-cyan-500/50 bg-cyan-500/15 px-4 py-2 text-sm text-cyan-900 dark:text-cyan-100 transition hover:bg-cyan-500/25"
           >
             Activate Safety Override
           </button>
           <button
-            className="rounded-lg border border-amber-400/40 bg-amber-500/20 px-4 py-2 text-sm text-amber-100 transition hover:bg-amber-500/30"
+            className="rounded-lg border border-amber-400/40 bg-amber-500/20 px-4 py-2 text-sm text-amber-900 dark:text-amber-100 transition hover:bg-amber-500/30"
           >
             AI Re-sync Signal Cycles
           </button>
           <button
-            className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20"
+            className="rounded-lg border border-slate-300/60 bg-white/20 px-4 py-2 text-sm text-slate-900 dark:text-white transition hover:bg-white/30"
           >
             Export Live Diagnostics
           </button>
