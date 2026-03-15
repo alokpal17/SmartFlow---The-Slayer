@@ -1,0 +1,111 @@
+import { StatCard } from "@/components/StatCard";
+import { Camera, Clock, AlertTriangle, TrendingUp } from "lucide-react";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer, BarChart, Bar } from "recharts";
+
+const trafficFlowData = [
+  { time: "06:00", vehicles: 1200, speed: 48 },
+  { time: "08:00", vehicles: 4200, speed: 28 },
+  { time: "10:00", vehicles: 2400, speed: 54 },
+  { time: "12:00", vehicles: 3200, speed: 42 },
+  { time: "14:00", vehicles: 3100, speed: 44 },
+  { time: "16:00", vehicles: 4500, speed: 26 },
+  { time: "18:00", vehicles: 5200, speed: 23 },
+];
+
+const congestionData = [
+  { zone: "North", load: 72 },
+  { zone: "South", load: 80 },
+  { zone: "East", load: 61 },
+  { zone: "West", load: 58 },
+  { zone: "Central", load: 94 },
+];
+
+export default function Overview() {
+  return (
+    <section className="space-y-6 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel)] p-6 shadow-2xl shadow-black/20 backdrop-blur-xl">
+      <header className="grid gap-4 md:grid-cols-2 md:items-end">
+        <div>
+          <h1 className="text-4xl font-extrabold text-cyan-100">
+            SmartFlow Traffic Control
+          </h1>
+          <p className="mt-2 text-sm text-slate-300">
+            Complete citywide flow management with predictive control.
+          </p>
+        </div>
+
+        <div className="rounded-xl border border-[var(--panel-border)] bg-[var(--surface)] p-4">
+          <p className="text-sm font-bold text-cyan-200">
+            Priority Advisory
+          </p>
+          <p className="mt-1 text-sm text-slate-300">
+            Central corridor at 94% capacity. Load shedding and rerouting active.
+          </p>
+        </div>
+      </header>
+
+      <div className="grid gap-4 md:grid-cols-4">
+        <StatCard title="Connected Cameras" value="28" subtitle="Total live streams" icon={Camera} status="online" />
+        <StatCard title="Average Speed" value="34 km/h" subtitle="Across corridors" icon={TrendingUp} status="warning" />
+        <StatCard title="Signal Efficiency" value="89%" subtitle="Adaptive timings" icon={Clock} status="online" />
+        <StatCard title="Incidents" value="2" subtitle="Critical" icon={AlertTriangle} status="critical" />
+      </div>
+
+      <div className="grid gap-4 lg:grid-cols-2">
+        <article className="rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4">
+          <h2 className="mb-3 text-lg font-semibold text-cyan-100">
+            Traffic load trend
+          </h2>
+          <div className="h-72">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={trafficFlowData}>
+                <CartesianGrid strokeDasharray="4 4" stroke="#1e293b" />
+                <XAxis dataKey="time" tick={{ fill: '#a5b4fc' }} />
+                <YAxis tick={{ fill: '#a5b4fc' }} />
+                <Line dataKey="vehicles" type="monotone" stroke="#38bdf8" strokeWidth={4} dot={false} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </article>
+
+        <article className="rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4">
+          <h2 className="mb-3 text-lg font-semibold text-cyan-100">
+            Congestion heatmap
+          </h2>
+          <div className="h-72">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={congestionData} layout="vertical" margin={{ left: 16 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
+                <XAxis type="number" tick={{ fill: '#a5b4fc' }} />
+                <YAxis type="category" dataKey="zone" tick={{ fill: '#a5b4fc' }} width={80} />
+                <Bar dataKey="load" fill="#38bdf8" radius={[4, 4, 4, 4]} />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </article>
+      </div>
+
+      <div className="rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-5">
+        <h3 className="mb-3 text-lg font-semibold text-cyan-100">
+          Quick ops panel
+        </h3>
+        <div className="grid gap-3 sm:grid-cols-3">
+          <button
+            className="rounded-lg border border-cyan-400/40 bg-cyan-500/20 px-4 py-2 text-sm text-cyan-100 transition hover:bg-cyan-500/30"
+          >
+            Activate Safety Override
+          </button>
+          <button
+            className="rounded-lg border border-amber-400/40 bg-amber-500/20 px-4 py-2 text-sm text-amber-100 transition hover:bg-amber-500/30"
+          >
+            AI Re-sync Signal Cycles
+          </button>
+          <button
+            className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm text-white transition hover:bg-white/20"
+          >
+            Export Live Diagnostics
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
