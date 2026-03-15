@@ -85,22 +85,22 @@ export default function Overview() {
       </div>
 
       <div className="rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-5">
-        <h3 className="mb-3 text-lg font-semibold text-cyan-100">
+        <h3 className="mb-3 text-lg font-semibold text-cyan-800 dark:text-cyan-100">
           Quick ops panel
         </h3>
         <div className="grid gap-3 sm:grid-cols-3">
           <button
-            className="rounded-lg border border-cyan-500/50 bg-cyan-500/15 px-4 py-2 text-sm text-cyan-900 dark:text-cyan-100 transition hover:bg-cyan-500/25"
+            className="rounded-xl border-2 border-cyan-400/70 bg-cyan-50 px-4 py-3 text-sm font-medium text-cyan-800 shadow-lg shadow-cyan-500/10 transition hover:bg-cyan-100 hover:border-cyan-400 dark:border-cyan-400/60 dark:bg-slate-800/90 dark:bg-cyan-500/25 dark:text-cyan-100 dark:hover:bg-cyan-500/35 dark:hover:border-cyan-400/80"
           >
             Activate Safety Override
           </button>
           <button
-            className="rounded-lg border border-amber-400/40 bg-amber-500/20 px-4 py-2 text-sm text-amber-900 dark:text-amber-100 transition hover:bg-amber-500/30"
+            className="rounded-xl border-2 border-amber-400/70 bg-amber-50 px-4 py-3 text-sm font-medium text-amber-800 shadow-lg shadow-amber-500/10 transition hover:bg-amber-100 hover:border-amber-400 dark:border-amber-400/60 dark:bg-slate-800/90 dark:bg-amber-500/25 dark:text-amber-100 dark:hover:bg-amber-500/35 dark:hover:border-amber-400/80"
           >
             AI Re-sync Signal Cycles
           </button>
           <button
-            className="rounded-lg border border-slate-300/60 bg-white/20 px-4 py-2 text-sm text-slate-900 dark:text-white transition hover:bg-white/30"
+            className="rounded-xl border-2 border-emerald-400/70 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-800 shadow-lg shadow-emerald-500/10 transition hover:bg-emerald-100 hover:border-emerald-400 dark:border-emerald-400/60 dark:bg-slate-800/90 dark:bg-emerald-500/25 dark:text-emerald-100 dark:hover:bg-emerald-500/35 dark:hover:border-emerald-400/80"
           >
             Export Live Diagnostics
           </button>

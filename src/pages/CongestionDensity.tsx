@@ -21,7 +21,9 @@ export default function CongestionDensity(): JSX.Element {
         return res.json();
       })
       .then((json) => {
-        setEntries(json || []);
+        // Backend returns either [] or { logs: [...] }; normalize to array
+        const list = Array.isArray(json) ? json : (json?.logs ?? []);
+        setEntries(Array.isArray(list) ? list : []);
         setError(null);
       })
       .catch((err) => setError(err.message))

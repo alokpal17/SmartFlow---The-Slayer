@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Activity, Camera, Clock, Map, AlertTriangle, History, Home, Moon, Sun } from "lucide-react";
+import { Activity, Camera, Clock, Map, AlertTriangle, History, Home, Moon, Sun, Menu } from "lucide-react";
 import { useTheme } from "../theme";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 // import smartflowLogo from "../assets/smartflow-logo.png";
 
 const navigationItems = [
@@ -13,7 +15,11 @@ const navigationItems = [
   { title: "History", url: "/history", icon: History },
 ];
 
+const navLinkClass = (isActive: boolean, activeBase: string, base: string) =>
+  `flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition ${isActive ? activeBase : base}`;
+
 export function MainNavbar() {
+  const [mobileOpen, setMobileOpen] = useState(false);
   const activeBase = "bg-gradient-to-r from-cyan-300/20 to-blue-300/15 text-cyan-100";
   const base = "text-slate-200 hover:text-white hover:bg-white/10";
 
@@ -53,15 +59,43 @@ export function MainNavbar() {
               key={item.url}
               to={item.url}
               end={item.url === "/"}
-              className={({ isActive }) =>
-                `flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition ${isActive ? activeBase : base}`
-              }
+              className={({ isActive }) => navLinkClass(isActive, activeBase, base)}
             >
               <item.icon className="h-4 w-4" />
               {item.title}
             </NavLink>
           ))}
         </nav>
+
+        <div className="flex items-center gap-2 md:hidden">
+          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+            <SheetTrigger
+              className={`rounded-lg p-2 ${isLight ? "text-slate-700 hover:bg-slate-200" : "text-slate-200 hover:bg-white/10"}`}
+              aria-label="Open menu"
+            >
+              <Menu className="h-5 w-5" />
+            </SheetTrigger>
+            <SheetContent
+              side="right"
+              className={`w-[280px] ${isLight ? "bg-white border-slate-200" : "bg-slate-900 border-slate-800"}`}
+            >
+              <nav className="mt-6 flex flex-col gap-1">
+                {navigationItems.map((item) => (
+                  <NavLink
+                    key={item.url}
+                    to={item.url}
+                    end={item.url === "/"}
+                    onClick={() => setMobileOpen(false)}
+                    className={({ isActive }) => navLinkClass(isActive, activeBase, base)}
+                  >
+                    <item.icon className="h-4 w-4" />
+                    {item.title}
+                  </NavLink>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
 
         <div className="flex items-center gap-3">
           <button

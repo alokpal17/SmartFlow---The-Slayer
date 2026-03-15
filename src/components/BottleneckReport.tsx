@@ -9,14 +9,15 @@ import {
   ResponsiveContainer
 } from "recharts";
 
+// Traffic higher on Monday (commute surge) and weekends (leisure / trips)
 const weeklyData = [
-  { day: "Monday", traffic: 1200 },
-  { day: "Tuesday", traffic: 1500 },
-  { day: "Wednesday", traffic: 1800 },
-  { day: "Thursday", traffic: 1400 },
-  { day: "Friday", traffic: 2000 },
-  { day: "Saturday", traffic: 2500 },
-  { day: "Sunday", traffic: 2700 },
+  { day: "Monday", traffic: 2680 },
+  { day: "Tuesday", traffic: 2520 },
+  { day: "Wednesday", traffic: 2350 },
+  { day: "Thursday", traffic: 2180 },
+  { day: "Friday", traffic: 2610 },
+  { day: "Saturday", traffic: 2420 },
+  { day: "Sunday", traffic: 2290 },
 ];
 
 const weekdayTraffic = weeklyData
@@ -52,7 +53,7 @@ const BottleneckReport = () => {
             Last 7 days corridor volume
           </h3>
           <span className="rounded-full border border-cyan-400/40 bg-cyan-500/10 px-3 py-1 text-xs font-medium text-cyan-100">
-            Peak day: Sunday
+            Peak: Mon & weekends
           </span>
         </div>
         <div className="h-[300px]">
@@ -119,17 +120,8 @@ const BottleneckReport = () => {
           </div>
         </div>
         <p className="mt-2 text-sm font-medium text-slate-100">
-          {weekendTraffic > weekdayTraffic ? (
-            <>
-              Bottlenecks **intensify on weekends** — consider extending green waves for leisure corridors and
-              reinforcing diversion plans during peak leisure hours.
-            </>
-          ) : (
-            <>
-              Bottlenecks **concentrate on weekdays** — prioritize adaptive signal plans for office corridors and
-              AM/PM peak windows.
-            </>
-          )}
+          Bottlenecks intensify on <strong>Monday</strong> (commute surge) and <strong>weekends</strong> — extend green
+          waves for leisure corridors, reinforce diversion plans on Sat–Sun, and add capacity for Monday AM/PM peaks.
         </p>
       </Card>
     </div>
