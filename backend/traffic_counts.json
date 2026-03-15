@@ -1,242 +1,408 @@
-[
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 0.0,
-        "vehicles": 18,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 0.33,
-        "vehicles": 12,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 0.67,
-        "vehicles": 14,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 1.0,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 1.33,
-        "vehicles": 17,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 1.67,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 2.0,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 2.34,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 2.67,
-        "vehicles": 14,
-        "date": "2025-09-13",
-        "time": "14:18:39"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 3.0,
-        "vehicles": 16,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 3.34,
-        "vehicles": 12,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 3.67,
-        "vehicles": 17,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 4.0,
-        "vehicles": 13,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 4.34,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 4.67,
-        "vehicles": 17,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 5.0,
-        "vehicles": 16,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 5.34,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 5.67,
-        "vehicles": 18,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 6.01,
-        "vehicles": 16,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 6.34,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 6.67,
-        "vehicles": 17,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 7.01,
-        "vehicles": 16,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 7.34,
-        "vehicles": 14,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 7.67,
-        "vehicles": 14,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 8.01,
-        "vehicles": 17,
-        "date": "2025-09-13",
-        "time": "14:18:40"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 8.34,
-        "vehicles": 17,
-        "date": "2025-09-13",
-        "time": "14:18:41"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 8.68,
-        "vehicles": 16,
-        "date": "2025-09-13",
-        "time": "14:18:41"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 9.01,
-        "vehicles": 15,
-        "date": "2025-09-13",
-        "time": "14:18:41"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 9.34,
-        "vehicles": 16,
-        "date": "2025-09-13",
-        "time": "14:18:41"
-    },
-    {
-        "mode": "video",
-        "video_name": "Traffic1.mp4",
-        "timestamp_sec": 9.68,
-        "vehicles": 19,
-        "date": "2025-09-13",
-        "time": "14:18:41"
-    }
-]
+{
+    "video_name": "Traffic2.mp4",
+    "average_density": 34.01,
+    "final_congestion_level": "HIGH",
+    "frames_processed": 40,
+    "logs": [
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 0.0,
+            "vehicles": 44,
+            "density": 44.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 0.33,
+            "vehicles": 45,
+            "density": 44.5,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 0.67,
+            "vehicles": 43,
+            "density": 44.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 1.0,
+            "vehicles": 40,
+            "density": 43.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 1.33,
+            "vehicles": 33,
+            "density": 41.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 1.67,
+            "vehicles": 38,
+            "density": 39.8,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 2.0,
+            "vehicles": 42,
+            "density": 39.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 2.34,
+            "vehicles": 33,
+            "density": 37.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 2.67,
+            "vehicles": 44,
+            "density": 38.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:00"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 3.0,
+            "vehicles": 38,
+            "density": 39.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 3.34,
+            "vehicles": 34,
+            "density": 38.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 3.67,
+            "vehicles": 32,
+            "density": 36.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 4.0,
+            "vehicles": 43,
+            "density": 38.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 4.34,
+            "vehicles": 39,
+            "density": 37.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 4.67,
+            "vehicles": 40,
+            "density": 37.6,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 5.0,
+            "vehicles": 31,
+            "density": 37.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 5.34,
+            "vehicles": 33,
+            "density": 37.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 5.67,
+            "vehicles": 26.5,
+            "density": 33.9,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 6.01,
+            "vehicles": 35.5,
+            "density": 33.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:01"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 6.34,
+            "vehicles": 33.5,
+            "density": 31.9,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 6.67,
+            "vehicles": 24,
+            "density": 30.5,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 7.01,
+            "vehicles": 34,
+            "density": 30.7,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 7.34,
+            "vehicles": 38,
+            "density": 33.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 7.67,
+            "vehicles": 37,
+            "density": 33.3,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 8.01,
+            "vehicles": 33,
+            "density": 33.2,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 8.34,
+            "vehicles": 40,
+            "density": 36.4,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 8.68,
+            "vehicles": 34,
+            "density": 36.4,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 9.01,
+            "vehicles": 33.5,
+            "density": 35.5,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 9.34,
+            "vehicles": 31,
+            "density": 34.3,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:02"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 9.68,
+            "vehicles": 26.5,
+            "density": 33.0,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 10.01,
+            "vehicles": 31.5,
+            "density": 31.3,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 10.34,
+            "vehicles": 33,
+            "density": 31.1,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 10.68,
+            "vehicles": 36,
+            "density": 31.6,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 11.01,
+            "vehicles": 29.5,
+            "density": 31.3,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 11.34,
+            "vehicles": 24.5,
+            "density": 30.9,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 11.68,
+            "vehicles": 26.5,
+            "density": 29.9,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 12.01,
+            "vehicles": 30.5,
+            "density": 29.4,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:03"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 12.35,
+            "vehicles": 28,
+            "density": 27.8,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:04"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 12.68,
+            "vehicles": 22,
+            "density": 26.3,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:04"
+        },
+        {
+            "mode": "video",
+            "video_name": "Traffic2.mp4",
+            "timestamp_sec": 13.01,
+            "vehicles": 20.5,
+            "density": 25.5,
+            "congestion_level": "HIGH",
+            "date": "2026-03-15",
+            "time": "10:56:04"
+        }
+    ]
+}

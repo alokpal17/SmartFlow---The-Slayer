@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Activity, Camera, Clock, Map, AlertTriangle, History, Home, Moon, Sun, Menu } from "lucide-react";
 import { useTheme } from "../theme";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-// import smartflowLogo from "../assets/smartflow-logo.png";
+// import smartflowLogo from "../assets/smartflow-logo.jpeg";
 
 const navigationItems = [
   { title: "Dashboard", url: "/", icon: Home },
@@ -37,7 +37,7 @@ export function MainNavbar() {
       <div className="mx-auto flex min-h-[76px] max-w-[1600px] items-center justify-between px-4 py-3 md:px-8">
         <div className="flex items-center gap-3">
           <div className="flex items-center justify-center rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-500 p-1.5">
-            <img className="h-10 w-10" src="/logo.png" />
+            <img className="h-10 w-10" src="/logo.jpeg" />
           </div>
           <div>
             <h1
