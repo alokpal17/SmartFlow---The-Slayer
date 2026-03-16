@@ -169,7 +169,7 @@ export default function Flow() {
         </div>
       )}
 
-      <article className="rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4">
+      <article className="rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4 transition-all duration-300 ease-out transform hover:-translate-y-1 hover:shadow-2xl hover:border-cyan-400/80 hover:ring-2 hover:ring-cyan-400/40">
         <h2 className="mb-3 text-lg font-semibold text-cyan-100">Flow over time</h2>
         <div className="h-72">
           <ResponsiveContainer width="100%" height="100%">

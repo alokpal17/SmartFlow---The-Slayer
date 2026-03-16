@@ -19,13 +19,13 @@ const timingHistory = [
 ];
 
 export default function SignalTimings() {
-  const statusDot = (status: string) => {
+  const statusStyle = (status: string) => {
     const map = {
-      Green: "bg-emerald-400",
-      Yellow: "bg-amber-300",
-      Red: "bg-rose-400",
-    }; 
-    return map[status as keyof typeof map] || "bg-slate-400";
+      Green: { pill: "bg-green-500 text-white", dot: "bg-green-200" },
+      Yellow: { pill: "bg-yellow-400 text-slate-900", dot: "bg-yellow-100" },
+      Red: { pill: "bg-red-500 text-white", dot: "bg-red-200" },
+    };
+    return map[status as keyof typeof map] || { pill: "bg-slate-500 text-white", dot: "bg-slate-200" };
   };
 
   return (
@@ -42,35 +42,39 @@ export default function SignalTimings() {
       </header>
 
       <div className="grid gap-5 xl:grid-cols-3 mt-1">
-        <article className="glass-card xl:col-span-2">
+        <article className="glass-card xl:col-span-2 p-6">
           <div className="mb-4 flex items-center gap-2 text-slate-100">
-            <Clock className="h-4 w-4" />
+            <Clock className="h-4 w-4 shrink-0" />
             <h3 className="text-lg font-bold">Signal Status Table</h3>
           </div>
           <div className="max-h-[520px] overflow-auto rounded-xl border border-[var(--panel-border)]">
             <table className="w-full border-separate border-spacing-y-2">
-              <thead className="bg-[var(--surface-2)] text-left text-xs uppercase tracking-widest text-slate-400">
+              <thead className="bg-[var(--surface-2)] text-xs uppercase tracking-widest text-slate-400">
                 <tr>
-                  <th className="px-4 py-3">ID</th>
-                  <th className="px-4 py-3">Location</th>
-                  <th className="px-4 py-3">State</th>
-                  <th className="px-4 py-3">Timer</th>
-                  <th className="px-4 py-3">Cycle</th>
+                  <th className="px-4 py-3 text-center">ID</th>
+                  <th className="px-4 py-3 text-left">Location</th>
+                  <th className="px-4 py-3 text-center">State</th>
+                  <th className="px-4 py-3 text-center">Timer</th>
+                  <th className="px-4 py-3 text-center">Cycle</th>
                 </tr>
               </thead>
               <tbody>
                 {signalData.map((signal) => (
                   <tr key={signal.id} className="bg-[var(--surface)] hover:bg-[var(--surface-2)] transition">
-                    <td className="px-4 py-3 font-mono text-sm text-cyan-100">{signal.id}</td>
+                    <td className="px-4 py-3 text-center font-mono text-sm text-cyan-100">{signal.id}</td>
                     <td className="px-4 py-3 text-sm text-slate-200">{signal.location}</td>
                     <td className="px-4 py-3">
-                      <span className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ${statusDot(signal.status)}`}>
-                        <span className="h-2.5 w-2.5 rounded-full" />
-                        {signal.status}
-                      </span>
+                      <div className="flex justify-center">
+                        <span
+                          className={`inline-flex min-w-[84px] items-center justify-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ${statusStyle(signal.status).pill}`}
+                        >
+                          <span className={`h-2.5 w-2.5 rounded-full ${statusStyle(signal.status).dot}`} />
+                          {signal.status}
+                        </span>
+                      </div>
                     </td>
-                    <td className="px-4 py-3 text-sm text-white">{signal.timer}s</td>
-                    <td className="px-4 py-3 text-sm text-slate-300">{signal.cycle}s</td>
+                    <td className="px-4 py-3 text-center text-sm text-white">{signal.timer}s</td>
+                    <td className="px-4 py-3 text-center text-sm text-slate-300">{signal.cycle}s</td>
                   </tr>
                 ))}
               </tbody>
@@ -78,9 +82,9 @@ export default function SignalTimings() {
           </div>
         </article>
 
-        <article className="glass-card">
-          <h3 className="mb-3 text-lg font-bold text-white">Signal Phase Trends</h3>
-          <div className="h-[420px]">
+        <article className="glass-card p-6">
+          <h3 className="mb-3 text-center text-lg font-bold text-white">Signal Phase Trends</h3>
+          <div className="h-[420px] px-1">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={timingHistory}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#334155" />

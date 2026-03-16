@@ -122,10 +122,18 @@
   }
 
   .metric-card {
-    @apply rounded-2xl border p-5;
+    @apply rounded-2xl border p-5 transition-all duration-300 ease-out transform;
     border-color: var(--panel-border);
     background: var(--surface);
     box-shadow: 0 18px 35px rgba(15, 23, 42, 0.35);
+  }
+
+  .metric-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(34, 211, 238, 0.8);
+    box-shadow:
+      0 0 0 2px rgba(34, 211, 238, 0.35),
+      0 24px 60px rgba(15, 23, 42, 0.45);
   }
 }
 
