@@ -8,7 +8,7 @@ interface MainLayoutProps {
 export function MainLayout({ children }: MainLayoutProps) {
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen sf-animated-bg"
       style={{ background: "var(--app-bg)", color: "var(--app-fg)" }}
     >
       <MainNavbar />

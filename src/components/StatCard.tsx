@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { LucideIcon } from "lucide-react";
+import { useTheme } from "@/theme";
 
 interface StatCardProps {
   title: string;
@@ -13,31 +14,44 @@ interface StatCardProps {
   status?: "online" | "warning" | "critical" | "offline";
 }
 
-const statusToken = {
-  online: {
-    label: "Online",
-    color: "bg-emerald-400/15 text-emerald-900 dark:text-emerald-100",
-    dot: "bg-emerald-500",
-  },
-  warning: {
-    label: "Warning",
-    color: "bg-amber-400/15 text-amber-900 dark:text-amber-100",
-    dot: "bg-amber-500",
-  },
-  critical: {
-    label: "Critical",
-    color: "bg-rose-400/15 text-rose-900 dark:text-rose-100",
-    dot: "bg-rose-500",
-  },
-  offline: {
-    label: "Offline",
-    color: "bg-slate-500/15 text-slate-900 dark:text-slate-200",
-    dot: "bg-slate-500",
-  },
-};
-
 export function StatCard({ title, value, subtitle, icon: Icon, trend, status = "online" }: StatCardProps) {
+  const { theme } = useTheme();
+  const isLight = theme === "light";
+
+  const statusToken = {
+    online: {
+      label: "Online",
+      color: `bg-emerald-400/15 ${isLight ? "text-emerald-900" : "text-emerald-100"}`,
+      dot: "bg-emerald-500",
+    },
+    warning: {
+      label: "Warning",
+      color: `bg-amber-400/15 ${isLight ? "text-amber-900" : "text-amber-100"}`,
+      dot: "bg-amber-500",
+    },
+    critical: {
+      label: "Critical",
+      color: `bg-rose-400/15 ${isLight ? "text-rose-900" : "text-rose-100"}`,
+      dot: "bg-rose-500",
+    },
+    offline: {
+      label: "Offline",
+      color: `bg-slate-500/15 ${isLight ? "text-slate-900" : "text-slate-200"}`,
+      dot: "bg-slate-500",
+    },
+  } as const;
+
   const statusEntry = statusToken[status];
+
+  const trendColor = trend
+    ? trend.isPositive
+      ? isLight
+        ? "text-emerald-700"
+        : "text-emerald-300"
+      : isLight
+        ? "text-rose-700"
+        : "text-rose-300"
+    : "";
 
   return (
     <div className="metric-card">
@@ -52,8 +66,9 @@ export function StatCard({ title, value, subtitle, icon: Icon, trend, status = "
 
           {trend && (
             <div className="mt-2 flex items-center gap-2 text-sm">
-              <span className={trend.isPositive ? "text-emerald-300" : "text-rose-300"}>
-                {trend.isPositive ? "+" : ""}{trend.value}%
+              <span className={trendColor}>
+                {trend.isPositive ? "+" : ""}
+                {trend.value}%
               </span>
               <span className="text-slate-400">vs last hour</span>
             </div>

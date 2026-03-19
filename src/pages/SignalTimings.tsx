@@ -82,7 +82,7 @@ export default function SignalTimings() {
           </div>
         </article>
 
-        <article className="glass-card p-6">
+        <article className="glass-card p-6 no-holo-glow">
           <h3 className="mb-3 text-center text-lg font-bold text-white">Signal Phase Trends</h3>
           <div className="h-[420px] px-1">
             <ResponsiveContainer width="100%" height="100%">
